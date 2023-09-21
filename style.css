@@ -1,0 +1,13 @@
+.blue-color{
+    color: blue;
+}
+
+#unique{
+    background: pink;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
