@@ -14,7 +14,18 @@
 
 <body>
 
+    <!-- <h1 class="you-will-be-changed">Welcome </h1>
+    <h1 class="you-will-be-changed">Welcome </h1>
+    <h1 class="you-will-be-changed">Welcome </h1>
+    <h1 class="you-will-be-changed">Welcome </h1>
 
+    <button id="change-button">Change Text</button>
+
+    <p class= "change-paragraph">My Paragraph</p>
+    <button id="change-paragraph">Change Paragraph</button>
+
+    <p id="introduction">My name is Moses</p>
+    <button id="change-button2">Change Text Name</button> -->
     <!-- <div>
     <h1 class="blue-color">Welcome to this session</h1>
     <h2 class="bg-pink-500 text-white">Welcome to this session</h2>
@@ -26,7 +37,7 @@
     </a>
   </div> -->
 
-    <form action="/" method="post" class="p-16 space-y-2 flex flex-col">
+    <!-- <form action="/" id="contact-form" method="post" class="p-16 space-y-2 flex flex-col">
         <div class="flex flex-col gap-2">
             <label for="full_name" class="font-medium text-lg">Full Name</label>
             <input type="text" name="full_name" class="border border-orange-400 rounded p-2" />
@@ -52,7 +63,24 @@
             </button>
         </div>
 
+    </form> -->
+
+    <form id="todo-form" class="p-16 flex items-center gap-2">
+        <div class="flex flex-col gap-1 flex-grow">
+            <label for="full_name" class="font-medium text-lg">Todo Item Text</label>
+            <div class="flex items-center gap-2">
+                <input type="text" name="todo_item" class="border flex-grow border-orange-400 rounded p-2" />
+                <button class="bg-gradient-to-r from-emerald-400 to-blue-400 px-4 py-2 rounded-lg" type="submit">
+                    Add to List
+                </button>
+            </div>
+        </div>
+
+      
     </form>
+
+
+    <ul id="todo-list" class="p-16 gap-2"></ul>
 
     <script src="index.js"></script>
 </body>
