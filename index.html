@@ -8,80 +8,33 @@
 
     <title>HTML Tutorial</title>
 
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
-    <!-- <h1 class="you-will-be-changed">Welcome </h1>
-    <h1 class="you-will-be-changed">Welcome </h1>
-    <h1 class="you-will-be-changed">Welcome </h1>
-    <h1 class="you-will-be-changed">Welcome </h1>
+    <div class="max-w-md mx-auto py-20">
+        <form class="w-full flex" id="search-form">
+            <input type="search" name="username" class="border flex-grow border-blue-500 rounded-l-md p-2"
+                placeholder="Enter your GitHub username" />
+            <button class="px-5 py-2 rounded-r-md bg-yellow-400 text-black">Search</button>
+        </form>
 
-    <button id="change-button">Change Text</button>
-
-    <p class= "change-paragraph">My Paragraph</p>
-    <button id="change-paragraph">Change Paragraph</button>
-
-    <p id="introduction">My name is Moses</p>
-    <button id="change-button2">Change Text Name</button> -->
-    <!-- <div>
-    <h1 class="blue-color">Welcome to this session</h1>
-    <h2 class="bg-pink-500 text-white">Welcome to this session</h2>
-    <p class="blue-color">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error autem consequatur laborum assumenda cum quas velit labore inventore explicabo quasi. Excepturi veritatis est eaque rem odit possimus aliquam dignissimos dolorem?
-    </p>
-    
-    <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-        Google
-    </a>
-  </div> -->
-
-    <!-- <form action="/" id="contact-form" method="post" class="p-16 space-y-2 flex flex-col">
-        <div class="flex flex-col gap-2">
-            <label for="full_name" class="font-medium text-lg">Full Name</label>
-            <input type="text" name="full_name" class="border border-orange-400 rounded p-2" />
-        </div>
-
-        <div class="flex flex-col gap-2">
-            <label for="" class="font-medium text-lg">Email</label>
-            <input type="email" placeholder="Your business email" name="email"
-                class="border border-orange-400 rounded p-2" />
-        </div>
-
-        <div class="flex flex-col gap-2">
-            <label for="" class="font-medium text-lg">Message</label>
-            <textarea placeholder="No more than 100 words please" rows="10" cols="5" name="message"
-                class="border border-orange-400 rounded p-2">
-            </textarea>
-        </div>
-
-
-        <div> 
-            <button class="bg-gradient-to-r from-emerald-400 to-blue-400 px-4 py-2 rounded-lg" type="submit">
-            Send message
-            </button>
-        </div>
-
-    </form> -->
-
-    <form id="todo-form" class="p-16 flex items-center gap-2">
-        <div class="flex flex-col gap-1 flex-grow">
-            <label for="full_name" class="font-medium text-lg">Todo Item Text</label>
+        <div class="mt-10">
             <div class="flex items-center gap-2">
-                <input type="text" name="todo_item" class="border flex-grow border-orange-400 rounded p-2" />
-                <button class="bg-gradient-to-r from-emerald-400 to-blue-400 px-4 py-2 rounded-lg" type="submit">
-                    Add to List
-                </button>
+                <img src="" alt="user image" id="userimage" class="w-10 h-10 rounded-full" />
+                <div>
+                    <h2 id="name"></h2>
+                    <span id="username" class="text-sm"></span>
+                </div>
             </div>
+
+            <ul id="content-list">
+
+            </ul>
         </div>
-
-      
-    </form>
-
-
-    <ul id="todo-list" class="p-16 gap-2"></ul>
-
+       
+    </div>
     <script src="index.js"></script>
 </body>
 
