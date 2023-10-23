@@ -11,7 +11,22 @@ function searchGithub(event)
     const formData = new FormData(event.target)
     const {username} = Object.fromEntries(formData.entries())
 
+// checks for the blank username   
+    if(username == "")
+    {
+        alert("Enter a valid Git username")
+        return
+    }
+
     fetch(`${API_URL}/${username}`).then( (response) => response.json() ).then(data =>{
+
+        // checks for the blank as well as incorrect username from the server
+        if(data.message && data.message == "Not Found")
+        {
+            alert("You entered a wrong username")
+            return
+        }
+
         const img = document.querySelector("#userimage")
         img.setAttribute("src", data.avatar_url)
 
@@ -27,7 +42,6 @@ function searchGithub(event)
         ul.appendChild(createListItem(`<span>Followers: </span> <span>${data.followers}</span>`))
 
     })
-
     
 }
 
